@@ -57,5 +57,5 @@ add_my_fruit = streamlit.text_input('Pick a fruit not already in the list that y
 if streamlit.button('Add a fruit to the List'):
     my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
     function_return = insert_row_snowflake(add_my_fruit)
-    streamlit.text(functoin_return)
+    streamlit.text(function_return)
 
